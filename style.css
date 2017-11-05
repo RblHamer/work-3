@@ -1,4 +1,4 @@
-/* --------------- reset.css --------------- */
+﻿/* --------------- reset.css --------------- */
 html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
@@ -111,7 +111,7 @@ header{
 	font-weight: 600;
 }
 .menu li a{
-	color: : #fff;
+	color: #fff;
 	text-decoration: none;
 	padding: 50px 35px;
 	display: block;
@@ -137,6 +137,21 @@ article header{
 	font-size: 0;
 	background: none;
 	margin-bottom: 10px;
+	position:relative;
+}
+.publish{
+	font-size:13px; 
+	background:rgba(0,0,0,0.6); 
+	color:#fff; 
+	position:absolute; 
+	bottom:-60px; 
+	padding:10px 20px; 
+	width:100%; 
+	box-sizing: border-box; 
+	transition: bottom 0.1s linear;
+}
+article>header:hover .publish{
+	bottom:0;
 }
 article h2{
 	font-size: 1.75em;
@@ -156,6 +171,8 @@ a.more{
 	padding: 7px 20px;
 	display: inline-block;
 	border-radius: 20px;
+	text-decoration:none;
+	transition:all 0.1s linear;
 }
 a:hover.more{
 	color: #339933;
@@ -241,5 +258,33 @@ footer {
 }
 footer img{
 	margin-bottom: 20px;
+}
+@media screen and (max-width:768px){
+	.logo{
+		margin-top:20px;
+	}
+	.manu li a{
+		padding:25px 35px;
+	}
+	main{
+		float:none; width:100%; margin-top:30px;
+	}
+	article>header img{
+		width:100%;
+	}
+	aside{
+		float:none; width:100%; margin-top:70px;
+	}
+}
+@media screen and (max-width:620px){
+	.logo{
+		float:none; margin:10px auto; display:block;
+	}
+	.manu{
+		float:none; width:100%;
+	}
+	.manu li a{
+		padding:10px 35px;
+	}
 }
 /* --------------- test comment ---------*/
